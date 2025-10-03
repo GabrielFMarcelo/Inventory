@@ -316,15 +316,15 @@ if (isset($_SESSION['user_id'])) {
 }
 
 // Get base image paths instead of product images
-$base_image_path = "../assets/images/base/base-" . $product['id'] . ".jpg";
+$base_image_path = "../../assets/images/base/base-" . $product['id'] . ".jpg";
 $base_image_url = file_exists($base_image_path) ? $base_image_path : "https://via.placeholder.com/500x500/007bff/ffffff?text=Base+Image";
-$back_base_image_path = "../assets/images/base/base-" . $product['id'] . "-1.jpg";
+$back_base_image_path = "../../assets/images/base/base-" . $product['id'] . "-1.jpg";
 $back_base_image_url = file_exists($back_base_image_path) ? $back_base_image_path : "";
 
 // Get product images for gallery display
-$product_image_path = "../assets/images/services/service-" . $product['id'] . ".jpg";
+$product_image_path = "../../assets/images/services/service-" . $product['id'] . ".jpg";
 $product_image_url = file_exists($product_image_path) ? $product_image_path : "https://via.placeholder.com/500x500/007bff/ffffff?text=Product+Image";
-$product_back_image_path = "../assets/images/services/service-" . $product['id'] . "-1.jpg";
+$product_back_image_path = "../../assets/images/services/service-" . $product['id'] . "-1.jpg";
 $product_back_image_url = file_exists($product_back_image_path) ? $product_back_image_path : "";
 ?>
 
